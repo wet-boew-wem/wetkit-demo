@@ -1,4 +1,11 @@
-wetkit-demo
+WetKit Demo
 ===========
+Demo content and page manager functionality.
 
-Demo Configuration for Drupal WEM.
+Key features
+* Demonstration homepage
+* Demonstration content
+* Demonstration Views/Panels Integration
+* Demonstration pane and region styles
+* Addition of Context Layouts for Non Panels
+* Addition of Strongarm Variables for i18n and WetKit Page Other
