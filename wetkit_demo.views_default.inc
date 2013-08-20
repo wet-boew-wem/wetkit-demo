@@ -59,7 +59,7 @@ function wetkit_demo_views_default_views() {
   $handler->display->display_options['fields']['field_featured_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_featured_image']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_featured_image']['settings'] = array(
-    'image_style' => 'panopoly_image_quarter',
+    'image_style' => 'wetkit_image_quarter',
     'image_link' => 'content',
   );
   /* Field: Title */
