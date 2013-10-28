@@ -1,11 +1,18 @@
-WetKit Demo
-===========
-Demo content and page manager functionality.
+WxT Demo
+========
+Demo content and page manager functionality for [Drupal WxT][drupalwxt].
 
-Key features
+Key Features
+------------
+
 * Demonstration homepage
 * Demonstration content
-* Demonstration Views/Panels Integration
+* Demonstration [Views][views] / [Panels][panels] Integration
 * Demonstration pane and region styles
-* Addition of Context Layouts for Non Panels
-* Addition of Strongarm Variables for i18n and WetKit Page Other
+
+
+<!-- Links Referenced -->
+
+[drupalwxt]:          http://drupal.org/project/wetkit
+[panels]:             http://drupal.org/project/panels
+[views]:              http://drupal.org/project/views
