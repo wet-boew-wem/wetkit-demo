@@ -281,5 +281,171 @@ function wetkit_demo_views_default_views() {
   );
   $export['wetkit_demo'] = $view;
 
+  $view = new view();
+  $view->name = 'wxt_theme';
+  $view->description = 'Views displays providing functionality to showcase the different WxT themes.';
+  $view->tag = 'wxt';
+  $view->base_table = 'bean';
+  $view->human_name = 'WxT Theme';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Most requested services and information';
+  $handler->display->display_options['css_class'] = 'wb-eqht';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'none';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '9';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_bootstrap_grid_plugin_style';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Field: Field: Title */
+  $handler->display->display_options['fields']['title_field']['id'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['table'] = 'field_data_title_field';
+  $handler->display->display_options['fields']['title_field']['field'] = 'title_field';
+  $handler->display->display_options['fields']['title_field']['label'] = '';
+  $handler->display->display_options['fields']['title_field']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title_field']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['title_field']['type'] = 'title_linked';
+  $handler->display->display_options['fields']['title_field']['settings'] = array(
+    'title_style' => 'h3',
+    'title_link' => 'content',
+    'title_class' => '',
+  );
+  $handler->display->display_options['fields']['title_field']['link_to_entity'] = 0;
+  /* Field: Block: Body */
+  $handler->display->display_options['fields']['field_bean_wetkit_body']['id'] = 'field_bean_wetkit_body';
+  $handler->display->display_options['fields']['field_bean_wetkit_body']['table'] = 'field_data_field_bean_wetkit_body';
+  $handler->display->display_options['fields']['field_bean_wetkit_body']['field'] = 'field_bean_wetkit_body';
+  $handler->display->display_options['fields']['field_bean_wetkit_body']['label'] = '';
+  $handler->display->display_options['fields']['field_bean_wetkit_body']['element_label_colon'] = FALSE;
+  /* Sort criterion: Block: Created */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'bean';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Filter criterion: Block: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'bean';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'wetkit_bean' => 'wetkit_bean',
+  );
+  /* Filter criterion: Block: Taxonomy (field_bean_taxonomy) */
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['id'] = 'field_bean_taxonomy_tid';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['table'] = 'field_data_field_bean_taxonomy';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['field'] = 'field_bean_taxonomy_tid';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['value'] = array(
+    0 => '42',
+  );
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['vocabulary'] = 'wetkit_categories';
+
+  /* Display: Home Highlight */
+  $handler = $view->new_display('panel_pane', 'Home Highlight', 'home_highlight');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Block: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'bean';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'wetkit_bean' => 'wetkit_bean',
+  );
+  /* Filter criterion: Block: Taxonomy (field_bean_taxonomy) */
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['id'] = 'field_bean_taxonomy_tid';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['table'] = 'field_data_field_bean_taxonomy';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['field'] = 'field_bean_taxonomy_tid';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['value'] = array(
+    0 => '40',
+    1 => '39',
+    2 => '38',
+    3 => '37',
+    4 => '36',
+    5 => '35',
+    6 => '34',
+    7 => '33',
+    8 => '32',
+    9 => '31',
+    10 => '30',
+    11 => '29',
+    12 => '28',
+    13 => '27',
+    14 => '26',
+    15 => '25',
+    16 => '24',
+    17 => '23',
+    18 => '22',
+    19 => '21',
+    20 => '20',
+    21 => '19',
+    22 => '18',
+    23 => '17',
+    24 => '16',
+    25 => '15',
+    26 => '14',
+    27 => '13',
+    28 => '12',
+    29 => '11',
+    30 => '10',
+    31 => '9',
+    32 => '8',
+    33 => '7',
+    34 => '6',
+    35 => '5',
+    36 => '4',
+    37 => '3',
+  );
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['vocabulary'] = 'wetkit_categories';
+  $handler->display->display_options['allow']['use_pager'] = 0;
+  $handler->display->display_options['allow']['items_per_page'] = 0;
+  $handler->display->display_options['allow']['offset'] = 0;
+  $handler->display->display_options['allow']['link_to_view'] = 0;
+  $handler->display->display_options['allow']['more_link'] = 0;
+  $handler->display->display_options['allow']['path_override'] = 0;
+  $handler->display->display_options['allow']['title_override'] = 'title_override';
+  $handler->display->display_options['allow']['exposed_form'] = 0;
+  $handler->display->display_options['allow']['fields_override'] = 0;
+
+  /* Display: Home Departments */
+  $handler = $view->new_display('panel_pane', 'Home Departments', 'home_department');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Block: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'bean';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'wetkit_bean' => 'wetkit_bean',
+  );
+  /* Filter criterion: Block: Taxonomy (field_bean_taxonomy) */
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['id'] = 'field_bean_taxonomy_tid';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['table'] = 'field_data_field_bean_taxonomy';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['field'] = 'field_bean_taxonomy_tid';
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['value'] = array(
+    0 => '42',
+  );
+  $handler->display->display_options['filters']['field_bean_taxonomy_tid']['vocabulary'] = 'wetkit_categories';
+  $translatables['wxt_theme'] = array(
+    t('Master'),
+    t('Most requested services and information'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Home Highlight'),
+    t('View panes'),
+    t('Home Departments'),
+  );
+  $export['wxt_theme'] = $view;
+
   return $export;
 }
