@@ -406,7 +406,7 @@ function wetkit_demo_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'field_bean_taxonomy_tid' => array(
       'type' => 'panel',
-      'context' => 'entity:accessibility_test.test-id',
+      'context' => '',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
@@ -457,7 +457,7 @@ function wetkit_demo_views_default_views() {
   $handler->display->display_options['argument_input'] = array(
     'field_bean_taxonomy_tid' => array(
       'type' => 'panel',
-      'context' => 'entity:accessibility_test.test-id',
+      'context' => '',
       'context_optional' => 0,
       'panel' => '0',
       'fixed' => '',
