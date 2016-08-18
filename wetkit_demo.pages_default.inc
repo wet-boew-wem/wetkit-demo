@@ -83,6 +83,8 @@ function wetkit_demo_default_page_manager_pages() {
   $display->cache = array();
   $display->title = 'Homepage Demo';
   $display->uuid = 'f434ee22-6e3e-9b44-a9d4-b7c4547f9236';
+  $display->storage_type = 'page_manager';
+  $display->storage_id = 'page_wetkit_demo_panel_panel_context';
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();

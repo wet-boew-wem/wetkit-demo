@@ -326,7 +326,7 @@ function wetkit_demo_views_default_views() {
   $handler->display->display_options['fields']['field_bean_wetkit_body']['field'] = 'field_bean_wetkit_body';
   $handler->display->display_options['fields']['field_bean_wetkit_body']['label'] = '';
   $handler->display->display_options['fields']['field_bean_wetkit_body']['element_label_colon'] = FALSE;
-  /* Sort criterion: Block: Created */
+  /* Sort criterion: Block: Date created */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'bean';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
