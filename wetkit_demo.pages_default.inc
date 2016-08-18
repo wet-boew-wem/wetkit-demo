@@ -82,7 +82,7 @@ function wetkit_demo_default_page_manager_pages() {
   );
   $display->cache = array();
   $display->title = 'Homepage Demo';
-  $display->uuid = 'f434ee22-6e3e-9b44-a9d4-b7c4547f9236';
+  $display->uuid = '9e5e6c64-35f7-488b-b768-13edc1514e37';
   $display->storage_type = 'page_manager';
   $display->storage_id = 'page_wetkit_demo_panel_panel_context';
   $display->content = array();
